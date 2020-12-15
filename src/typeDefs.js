@@ -2,6 +2,9 @@ import { gql } from "apollo-server-express";
 
 const typeDefs = gql`
   scalar JSON
+  type Subscription {
+    toDoAdded: ToDo
+  }
   type ToDo {
     _id: String
     title: String
